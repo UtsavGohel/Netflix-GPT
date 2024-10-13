@@ -17,7 +17,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_APP_ID,
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
-console.log(`🚀 ~ file: firebase.js:19 ~ firebaseConfig:`, firebaseConfig);
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
