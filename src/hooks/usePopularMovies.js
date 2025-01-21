@@ -14,7 +14,12 @@ const usePopularMovies = () => {
 
     const json = await data.json();
 
-    dispatch(addPopularMoviesVideo(json.results));
+    //set it as reversed list as some now playing and popular movies are same
+    const reverseData = json.results.sort((a, b) => {
+      return a.id - b.id;
+    });
+
+    dispatch(addPopularMoviesVideo(reverseData));
   };
 
   useEffect(() => {
