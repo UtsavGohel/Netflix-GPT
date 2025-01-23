@@ -80,11 +80,10 @@ const Login = () => {
         });
     }
   };
-  //https://www.netflix.com/login
   return (
     <>
+      <Header />
       <div>
-        <Header />
         <img className="absolute" alt="logo" src={BACKGROUND_IMG} />
       </div>
       <form
